@@ -1,2 +1,7 @@
-sdfsafasfd
-asdfsadf
+Hostname             ::: inventoryhostname
+Architecture         ::: architectre
+OS                   ::: osname
+Memory               ::: memoryinmb
+BIOS Version         ::: biosversion
+DISK (SDB) Size      ::: sdbsize
+DISK (SDC) Size      ::: sdc size
