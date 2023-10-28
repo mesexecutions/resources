@@ -4,4 +4,4 @@ OS                   ::: osname
 Memory               ::: memoryinmb
 BIOS Version         ::: biosversion
 DISK (SDB) Size      ::: sdbsize
-DISK (SDC) Size      ::: sdcsize
+DISK (SDC) Size      ::: sdtsize
