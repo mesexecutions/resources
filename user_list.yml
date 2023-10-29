@@ -1,0 +1,21 @@
+users:
+  - name: alicesmith
+    job: developer
+  - name: johndoe
+    job: manager
+  - name: emmajones
+    job: director
+  - name: davidwilson
+    job: developer
+  - name: sarahdavis
+    job: manager
+  - name: michaeljackson
+    job: director
+  - name: lisabrown
+    job: developer
+  - name: robertmiller
+    job: manager
+  - name: oliviataylor
+    job: director
+  - name: williamjohnson
+    job: developer
