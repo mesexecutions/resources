@@ -1,5 +1,5 @@
 Hostname             ::: inventoryhostname
-Architecture         ::: architectre
+Architecture         ::: architecture
 OS                   ::: osname
 Memory               ::: memoryinmb
 BIOS Version         ::: biosversion
