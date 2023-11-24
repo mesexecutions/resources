@@ -1,9 +1,17 @@
-var excludeTime = entry().field("ExcludeTime");
-var schedule = entry().field("Schedule");
+// Load the moment.js library
+var moment = require('moment');
 
-if (excludeTime && schedule) {
-    var timeDiff = schedule.getTime() - excludeTime.getTime();
-    var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+var excludeTimeString = entry().field("ExcludeTime");
+var scheduleString = entry().field("Schedule");
+
+if (excludeTimeString && scheduleString) {
+    // Convert strings to moment objects
+    var excludeTime = moment(excludeTimeString);
+    var schedule = moment(scheduleString);
+
+    // Calculate the difference in days
+    var daysDiff = schedule.diff(excludeTime, 'days');
+
     entry().set("DaysDifference", daysDiff);
 } else {
     message("Please provide values for both ExcludeTime and Schedule fields.");
