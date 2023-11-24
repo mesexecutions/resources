@@ -1,11 +1,21 @@
-// Example JavaScript script for Memento
-// This script logs a message to the console
+// Assuming "Exclude Time" and "Schedule" are Date or DateTime fields
 
-// Get the current entry
-var currentEntry = entry();
+// Get the values of "Exclude Time" and "Schedule"
+var excludeTimeValue = field("Exclude Time");
+var scheduleValue = field("Schedule");
 
-// Log a message to the console
-console.log("Hello from Memento JavaScript! Current entry ID: " + currentEntry.id);
+// Initialize variables to store the calculated result
+var dateDifferenceDays;
 
-// Display a notification to the user
-message("Script executed successfully!");
+// Ensure both fields have values
+if (excludeTimeValue && scheduleValue) {
+    // Calculate the date difference in days
+    dateDifferenceDays = moment(scheduleValue).startOf('day').diff(moment(excludeTimeValue).startOf('day'), 'days');
+} else {
+    // If either field is empty, handle accordingly
+    dateDifferenceDays = null; // or any other default value or error handling
+}
+
+// Now you can use the 'dateDifferenceDays' variable as needed
+// For example, you can display it or use it in further calculations
+dateDifferenceDays;
